@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Headlines Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">WORLD<span>NEWS</span></div>
+            <p class="subtitle">อัปเดตสถานการณ์สำคัญจากทั่วทุกมุมโลก</p>
+            
+            <div class="country-tabs">
+                <button class="tab-btn active" data-country="th">ประเทศไทย 🇹🇭</button>
+                <button class="tab-btn" data-country="us">สหรัฐอเมริกา 🇺🇸</button>
+                <button class="tab-btn" data-country="jp">ญี่ปุ่น 🇯🇵</button>
+                <button class="tab-btn" data-country="gb">อังกฤษ 🇬🇧</button>
+                <button class="tab-btn" data-country="cn">จีน 🇨🇳</button>
+                <button class="tab-btn" data-country="kr">เกาหลีใต้ 🇰🇷</button>
+                <button class="tab-btn" data-country="fr">ฝรั่งเศส 🇫🇷</button>
+                <button class="tab-btn" data-country="de">เยอรมนี 🇩🇪</button>
+                <button class="tab-btn" data-country="ru">รัสเซีย 🇷🇺</button>
+                <button class="tab-btn" data-country="in">อินเดีย 🇮🇳</button>
+            </div>
+
+            <div class="main-action">
+                <button id="loadNewsBtn">โหลดข่าวล่าสุด</button>
+            </div>
+        </header>
+
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>กำลังรวบรวมข่าวสารล่าสุด...</p>
+        </div>
+
+        <ul id="newsList">
+            <div class="empty-state">กดปุ่ม "โหลดข่าวล่าสุด" เพื่อรับชมพาดหัวข่าว 5 อันดับแรก</div>
+        </ul>
+
+        <div class="load-more-container">
+            <button id="moreNewsBtn" class="hidden">แสดงเนื้อหาข่าวอื่นๆ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
