@@ -1,4 +1,4 @@
-const API_KEY = 'a1280947a1245969b92ca1187161e7ca'; 
+const API_KEY = 'KEY_HERE'; 
 let currentCountry = 'th';
 let allArticles = [];
 
